@@ -20,7 +20,7 @@ def load_db():
 
 db = load_db()
 
-# Полностью скрываем весь мусор Streamlit и настраиваем мягкий дизайн + адаптив мобильного меню
+# Полностью скрываем весь мусор Streamlit и настраиваем надежное отображение мобильного меню
 st.markdown("""
 <style>
     #MainMenu, footer, header {visibility: hidden;}
@@ -30,15 +30,33 @@ st.markdown("""
         background-color: #f4f6f9;
         color: #2c3e50;
     }
-    /* Адаптив и починка боковой панели для мобильных устройств */
+    
+    /* Надежное отображение и поведение бокового меню на мобильных устройствах */
+    @media (max-width: 991px) {
+        [data-testid="stSidebar"] {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            z-index: 999999 !important;
+            height: 100vh !important;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.15);
+        }
+        /* Кнопка открытия/закрытия меню на мобильных */
+        [data-testid="collapsedControl"] {
+            display: block !important;
+            z-index: 999998 !important;
+            position: fixed !important;
+            top: 10px !important;
+            left: 10px !important;
+            background-color: #ffffff !important;
+            border-radius: 8px !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+        }
+    }
+
     [data-testid="stSidebar"] {
         background-color: #e9ecef;
         border-right: 1px solid #dcedf2;
-    }
-    @media (max-width: 768px) {
-        [data-testid="stSidebar"] {
-            width: 100% !important;
-        }
     }
     [data-testid="stSidebar"] label, [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] p, [data-testid="stSidebar"] span {
         color: #2c3e50 !important;
