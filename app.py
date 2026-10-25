@@ -6,7 +6,7 @@ from docx_generator import generate_tariff_docx, combine_images_vertically
 st.set_page_config(
     page_title="TCF Tariff Sheet System",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 DB_PATH = "elements_db.json"
@@ -20,7 +20,7 @@ def load_db():
 
 db = load_db()
 
-# Полностью скрываем весь мусор Streamlit и настраиваем надежное отображение мобильного меню
+# Tasarım ve mobil uyumluluk stilleri
 st.markdown("""
 <style>
     #MainMenu, footer, header {visibility: hidden;}
@@ -31,45 +31,6 @@ st.markdown("""
         color: #2c3e50;
     }
     
-    /* Надежное отображение и поведение бокового меню на мобильных устройствах */
-    @media (max-width: 991px) {
-        [data-testid="stSidebar"] {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            z-index: 999999 !important;
-            height: 100vh !important;
-            box-shadow: 4px 0 15px rgba(0,0,0,0.15);
-        }
-        /* Кнопка открытия/закрытия меню на мобильных */
-        [data-testid="collapsedControl"] {
-            display: block !important;
-            z-index: 999998 !important;
-            position: fixed !important;
-            top: 10px !important;
-            left: 10px !important;
-            background-color: #ffffff !important;
-            border-radius: 8px !important;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
-        }
-    }
-
-    [data-testid="stSidebar"] {
-        background-color: #e9ecef;
-        border-right: 1px solid #dcedf2;
-    }
-    [data-testid="stSidebar"] label, [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] p, [data-testid="stSidebar"] span {
-        color: #2c3e50 !important;
-        font-weight: 600;
-    }
-    /* Карточки боксов с мягкой тенью */
-    div[data-testid="stVerticalBlock"] > div[style*="border"] {
-        background-color: #ffffff !important;
-        border: 1px solid #cbd5e1 !important;
-        border-radius: 12px !important;
-        padding: 12px !important;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    }
     .soft-panel {
         background-color: #ffffff;
         border: 1px solid #cbd5e1;
@@ -116,7 +77,7 @@ st.markdown("""
         border: 1px solid #cbd5e1 !important;
         border-radius: 6px !important;
     }
-    /* Аккуратные вкладки рядов (активная вкладка в стиле сайта, не синяя) */
+    /* Аккуратные вкладки рядов */
     .stTabs [data-baseweb="tab-list"] {
         gap: 12px;
         background-color: #e2e8f0;
@@ -141,7 +102,7 @@ st.markdown("""
         border-color: #1e293b !important;
         box-shadow: 0 2px 5px rgba(51,65,85,0.3);
     }
-    /* Все кнопки в едином стиле с красивым ховером */
+    /* Кнопки */
     .stButton > button {
         border-radius: 8px;
         font-weight: 600;
@@ -294,21 +255,12 @@ UI = {
     }
 }
 
-top_c1, top_c2 = st.columns([3.0, 1.2])
-
-with st.sidebar:
-    st.markdown("Ayarlar")
-    ui_lang = st.selectbox(
-        "Dil",
-        options=["TR", "RU"],
-        format_func=lambda x: "Türkçe" if x == "TR" else "Русский",
-        index=0
-    )
-
-T = UI[ui_lang]
+# Выбор языка вынесем наверх рядом с заголовком для компактности
+top_c1, top_c2, top_c3 = st.columns([2.2, 1.2, 0.8])
 
 with top_c1:
-    st.markdown(f"### {T['app_title']}")
+    # Заголовок без смайлика
+    st.markdown("### Системный конструктор Tariff Sheet")
 
 with top_c2:
     comp_type = st.selectbox(
@@ -316,6 +268,16 @@ with top_c2:
         options=["TR", "INT"],
         format_func=lambda x: T["comp_tr"] if x == "TR" else T["comp_int"]
     )
+
+with top_c3:
+    ui_lang = st.selectbox(
+        "Dil / Язык",
+        options=["TR", "RU"],
+        format_func=lambda x: "Türkçe" if x == "TR" else "Русский",
+        index=0
+    )
+
+T = UI[ui_lang]
 
 if not db:
     st.error("elements_db.json not found.")
@@ -371,15 +333,19 @@ def open_element_picker(state_key, allowed_codes, is_indiv=False, box_num=1, rol
                         st.rerun()
 
 
-with st.sidebar:
-    st.divider()
-    st.markdown(f"#### {T['team_header']}")
-    age_group = st.selectbox(T["age_group"], ["6-12", "8-14", "9-15"])
-    category = st.selectbox(
-        T["category"],
-        options=["Çift Erkek", "Çift Kadın", "Çift Mix", "3'lü Kadın", "4'lü Erkek"],
-        format_func=lambda x: T["cats_display"][x]
-    )
+# --- КОМПАКТНЫЙ БЛОК ДАННЫХ КОМАНДЫ И СПОРТСМЕНОВ В ВЕРХНЕЙ ЧАСТИ ЭКРАНА ---
+with st.container(border=True):
+    st.markdown(f"##### {T['team_header']}")
+    
+    col_meta1, col_meta2 = st.columns(2)
+    with col_meta1:
+        age_group = st.selectbox(T["age_group"], ["6-12", "8-14", "9-15"])
+    with col_meta2:
+        category = st.selectbox(
+            T["category"],
+            options=["Çift Erkek", "Çift Kadın", "Çift Mix", "3'lü Kadın", "4'lü Erkek"],
+            format_func=lambda x: T["cats_display"][x]
+        )
 
     if category == "3'lü Kadın":
         partner_roles = T["roles_3"]
@@ -396,24 +362,32 @@ with st.sidebar:
     else:
         st.caption(T["athletes_tr_hint"])
 
+    # Динамические колонки для имен спортсменов, чтобы на мобилках и ПК выглядело компактно
+    ath_cols = st.columns(num_partners)
     athletes = []
     for idx_r, role in enumerate(partner_roles):
-        athletes.append(st.text_input(role, key=f"ath_{idx_r}"))
+        with ath_cols[idx_r]:
+            athletes.append(st.text_input(role, key=f"ath_{idx_r}"))
 
     club_label = T["club_int"] if comp_type == "INT" else T["club_tr"]
     phone_label = T["phone_int"] if comp_type == "INT" else T["phone_tr"]
     team_label = T["team_no_int"] if comp_type == "INT" else T["team_no_tr"]
 
-    club_name = st.text_input(club_label, value="")
-    coach_phone = st.text_input(phone_label, value="")
-    team_no = st.text_input(team_label, value="")
+    inf_cols = st.columns(3)
+    with inf_cols[0]:
+        club_name = st.text_input(club_label, value="")
+    with inf_cols[1]:
+        coach_phone = st.text_input(phone_label, value="")
+    with inf_cols[2]:
+        team_no = st.text_input(team_label, value="")
 
-    st.divider()
-    if st.button(T["clear_all"], use_container_width=True):
+    if st.button(T["clear_all"], use_container_width=False):
         for k in list(st.session_state.keys()):
             if k.startswith("b_") or k.startswith("sel_"):
                 del st.session_state[k]
         st.rerun()
+
+st.divider()
 
 
 team_codes = []
