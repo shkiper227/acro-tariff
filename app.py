@@ -20,7 +20,7 @@ def load_db():
 
 db = load_db()
 
-# Полностью скрываем весь мусор Streamlit (Deploy, меню, футер) и настраиваем мягкий дизайн
+# Полностью скрываем весь мусор Streamlit и настраиваем мягкий дизайн + адаптив мобильного меню
 st.markdown("""
 <style>
     #MainMenu, footer, header {visibility: hidden;}
@@ -30,10 +30,15 @@ st.markdown("""
         background-color: #f4f6f9;
         color: #2c3e50;
     }
-    /* Боковая панель */
+    /* Адаптив и починка боковой панели для мобильных устройств */
     [data-testid="stSidebar"] {
         background-color: #e9ecef;
         border-right: 1px solid #dcedf2;
+    }
+    @media (max-width: 768px) {
+        [data-testid="stSidebar"] {
+            width: 100% !important;
+        }
     }
     [data-testid="stSidebar"] label, [data-testid="stSidebar"] .stMarkdown, [data-testid="stSidebar"] p, [data-testid="stSidebar"] span {
         color: #2c3e50 !important;
@@ -93,7 +98,7 @@ st.markdown("""
         border: 1px solid #cbd5e1 !important;
         border-radius: 6px !important;
     }
-    /* Аккуратные и красивые вкладки рядов */
+    /* Аккуратные вкладки рядов (активная вкладка в стиле сайта, не синяя) */
     .stTabs [data-baseweb="tab-list"] {
         gap: 12px;
         background-color: #e2e8f0;
@@ -113,10 +118,10 @@ st.markdown("""
         transition: all 0.2s ease-in-out;
     }
     .stTabs [aria-selected="true"] {
-        background-color: #0d6efd !important;
+        background-color: #334155 !important;
         color: #ffffff !important;
-        border-color: #0b5ed7 !important;
-        box-shadow: 0 2px 5px rgba(13,110,253,0.3);
+        border-color: #1e293b !important;
+        box-shadow: 0 2px 5px rgba(51,65,85,0.3);
     }
     /* Все кнопки в едином стиле с красивым ховером */
     .stButton > button {
@@ -129,9 +134,9 @@ st.markdown("""
         transition: all 0.15s ease-in-out;
     }
     .stButton > button:hover {
-        border-color: #0d6efd;
+        border-color: #334155;
         background-color: #f8fafc;
-        color: #0d6efd;
+        color: #334155;
         box-shadow: 0 4px 6px rgba(0,0,0,0.08);
         transform: translateY(-1px);
     }
@@ -170,7 +175,6 @@ UI = {
         "pick_el_btn": "Görsel Katalogdan Seç",
         "val_lbl": "Zorluk Değeri (V)",
         "hold_lbl": "Süre (Saniye)",
-        "hide_no_lbl": "Numarayı gizle",
         "same_all_lbl": "Tüm partnerler aynı",
         "calc_hdr": "ZORLUK HESAPLAMASI",
         "team_pts": "Çift / Grup Toplamı",
@@ -206,7 +210,7 @@ UI = {
         "rule_ind_warn": "Bireysel element sayısı (Gereken: 3):"
     },
     "RU": {
-        "app_title": "🤸 Системный конструктор Tariff Sheet",
+        "app_title": "Системный конструктор Tariff Sheet",
         "comp_label": "Тип соревнований (Язык бланка)",
         "comp_tr": "Турецкие соревнования (TCF - Бланк на турецком)",
         "comp_int": "Международные соревнования (FIG - Бланк на английском)",
@@ -236,7 +240,6 @@ UI = {
         "pick_el_btn": "Выбрать элемент (Каталог)",
         "val_lbl": "Трудность (V)",
         "hold_lbl": "Секунды статики",
-        "hide_no_lbl": "Скрыть номер",
         "same_all_lbl": "Одинаковый у всех",
         "calc_hdr": "РАСЧЕТ СЛОЖНОСТИ",
         "team_pts": "Парные / Групповые",
@@ -275,7 +278,6 @@ UI = {
 
 top_c1, top_c2 = st.columns([3.0, 1.2])
 
-# Компактный выбор языка в самом верху бокового меню
 with st.sidebar:
     st.markdown("Ayarlar")
     ui_lang = st.selectbox(
@@ -491,7 +493,6 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
                             value=el_info["hold"],
                             key=f"b_thold_{box_num}_{el_code}"
                         )
-                        hide_no = st.checkbox(T["hide_no_lbl"], value=False, key=f"b_thide_{box_num}")
 
                         running_series_sum += val
                         total_team_points += val
@@ -501,12 +502,11 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
                         elif el_info["type"] == "dynamic":
                             team_dynamic_count += 1
 
-                        # Трудность парного/группового элемента строго во 2-й клеточке
                         boxes_data[box_num] = {
                             "mode": "team",
                             "hold": hold,
                             "d_cells": ["", str(val), "", ""],
-                            "element_no": "" if hide_no else str(int(el_code)),
+                            "element_no": str(int(el_code)),
                             "images": [el_info["image"]]
                         }
 
