@@ -30,7 +30,14 @@ st.markdown("""
         background-color: #f4f6f9;
         color: #2c3e50;
     }
-    
+    /* Карточки боксов с мягкой тенью */
+    div[data-testid="stVerticalBlock"] > div[style*="border"] {
+        background-color: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 12px !important;
+        padding: 12px !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
     .soft-panel {
         background-color: #ffffff;
         border: 1px solid #cbd5e1;
@@ -77,32 +84,19 @@ st.markdown("""
         border: 1px solid #cbd5e1 !important;
         border-radius: 6px !important;
     }
-    /* Аккуратные вкладки рядов */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 12px;
+    /* Заголовок ряда боксов в стиле сайта */
+    .row-banner {
         background-color: #e2e8f0;
-        padding: 8px;
-        border-radius: 12px;
-        border: 1px solid #cbd5e1;
-    }
-    .stTabs [data-baseweb="tab"] {
-        height: 45px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        color: #475569;
+        color: #1e293b;
         font-weight: 700;
-        padding: 0 24px;
+        padding: 8px 16px;
+        border-radius: 8px;
         border: 1px solid #cbd5e1;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        transition: all 0.2s ease-in-out;
+        margin-top: 8px;
+        margin-bottom: 12px;
+        font-size: 15px;
     }
-    .stTabs [aria-selected="true"] {
-        background-color: #334155 !important;
-        color: #ffffff !important;
-        border-color: #1e293b !important;
-        box-shadow: 0 2px 5px rgba(51,65,85,0.3);
-    }
-    /* Кнопки */
+    /* Все кнопки в едином стиле с красивым ховером */
     .stButton > button {
         border-radius: 8px;
         font-weight: 600;
@@ -256,17 +250,7 @@ UI = {
 }
 
 # Верхняя шапка: Заголовок, выбор типа соревнований и языка
-top_c1, top_c2, top_c3 = st.columns([2.2, 1.2, 0.8])
-
-with top_c1:
-    st.markdown("### Системный конструктор Tariff Sheet")
-
-with top_c2:
-    comp_type = st.selectbox(
-        "Yarışma Türü",
-        options=["TR", "INT"],
-        format_func=lambda x: "Ulusal (TR)" if x == "TR" else "Uluslararası (INT)"
-    )
+top_c1, top_c2, top_c3 = st.columns([2.0, 1.4, 0.6])
 
 with top_c3:
     ui_lang = st.selectbox(
@@ -277,6 +261,16 @@ with top_c3:
     )
 
 T = UI[ui_lang]
+
+with top_c1:
+    st.markdown(f"### {T['app_title']}")
+
+with top_c2:
+    comp_type = st.selectbox(
+        T["comp_label"],
+        options=["TR", "INT"],
+        format_func=lambda x: T["comp_tr"] if x == "TR" else T["comp_int"]
+    )
 
 if not db:
     st.error("elements_db.json not found.")
@@ -332,7 +326,7 @@ def open_element_picker(state_key, allowed_codes, is_indiv=False, box_num=1, rol
                         st.rerun()
 
 
-# --- КОМПАКТНЫЙ БЛОК ДАННЫХ КОМАНДЫ НА ЭКРАНЕ (ИДЕАЛЬНО ДЛЯ МОБИЛЬНЫХ) ---
+# --- КОМПАКТНЫЙ БЛОК ДАННЫХ КОМАНДЫ В ВЕРХНЕЙ ЧАСТИ ЭКРАНА ---
 with st.container(border=True):
     st.markdown(f"##### {T['team_header']}")
     
@@ -412,160 +406,162 @@ total_indiv_sum_all_partners = 0
 
 MODE_KEYS = ["empty", "team", "indiv", "sep"]
 
-tabs = st.tabs([T["row1"], T["row2"]])
+# --- ОТОБРАЖЕНИЕ БОКСОВ БЕЗ ВКЛАДОК: РЯД 1 (1-7) И ПОД НИМ РЯД 2 (8-14) ---
+row_titles = [T["row1"], T["row2"]]
 
 for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
-    with tabs[row_idx]:
-        cols = st.columns(7)
-        for idx, box_num in enumerate(range(start_b, end_b + 1)):
-            with cols[idx]:
-                with st.container(border=True):
-                    st.markdown(f"**{T['box_lbl']} {box_num}**")
-                    mode = st.selectbox(
-                        "Mode",
-                        options=MODE_KEYS,
-                        format_func=lambda m: {
-                            "empty": T["mode_empty"],
-                            "team": T["mode_team"],
-                            "indiv": T["mode_indiv"],
-                            "sep": T["mode_sep"]
-                        }[m],
-                        key=f"b_mode_{box_num}",
-                        label_visibility="collapsed"
+    st.markdown(f"<div class='row-banner'>{row_titles[row_idx]}</div>", unsafe_allow_html=True)
+    cols = st.columns(7)
+    for idx, box_num in enumerate(range(start_b, end_b + 1)):
+        with cols[idx]:
+            with st.container(border=True):
+                st.markdown(f"**{T['box_lbl']} {box_num}**")
+                mode = st.selectbox(
+                    "Mode",
+                    options=MODE_KEYS,
+                    format_func=lambda m: {
+                        "empty": T["mode_empty"],
+                        "team": T["mode_team"],
+                        "indiv": T["mode_indiv"],
+                        "sep": T["mode_sep"]
+                    }[m],
+                    key=f"b_mode_{box_num}",
+                    label_visibility="collapsed"
+                )
+
+                if mode == "empty":
+                    boxes_data[box_num] = {
+                        "mode": "empty",
+                        "hold": "",
+                        "d_cells": ["", "", "", ""],
+                        "element_no": "",
+                        "images": []
+                    }
+
+                elif mode == "sep":
+                    default_sum = str(running_series_sum) if running_series_sum > 0 else ""
+                    custom_sum = st.text_input(T["sep_sum_lbl"], value=default_sum, key=f"b_sep_{box_num}")
+                    boxes_data[box_num] = {
+                        "mode": "separator",
+                        "sep_sum": custom_sum,
+                        "hold": "",
+                        "d_cells": ["", "", "", ""],
+                        "element_no": "",
+                        "images": []
+                    }
+                    running_series_sum = 0
+
+                elif mode == "team":
+                    sel_key = f"sel_team_{box_num}"
+                    if sel_key not in st.session_state or st.session_state[sel_key] not in team_codes:
+                        st.session_state[sel_key] = team_codes[0]
+
+                    el_code = st.session_state[sel_key]
+                    el_info = db[el_code]
+
+                    if os.path.exists(el_info["image"]):
+                        st.image(el_info["image"], use_container_width=True)
+                    st.caption(f"**No {el_code}** | **V {el_info['value']}**")
+
+                    if st.button(T["pick_el_btn"], key=f"btn_t_{box_num}", use_container_width=True):
+                        open_element_picker(sel_key, team_codes, is_indiv=False, box_num=box_num)
+
+                    val = st.number_input(
+                        T["val_lbl"],
+                        min_value=0,
+                        max_value=30,
+                        value=int(el_info["value"]),
+                        key=f"b_tval_{box_num}_{el_code}"
+                    )
+                    hold = st.text_input(
+                        T["hold_lbl"],
+                        value=el_info["hold"],
+                        key=f"b_thold_{box_num}_{el_code}"
                     )
 
-                    if mode == "empty":
-                        boxes_data[box_num] = {
-                            "mode": "empty",
-                            "hold": "",
-                            "d_cells": ["", "", "", ""],
-                            "element_no": "",
-                            "images": []
-                        }
+                    running_series_sum += val
+                    total_team_points += val
 
-                    elif mode == "sep":
-                        default_sum = str(running_series_sum) if running_series_sum > 0 else ""
-                        custom_sum = st.text_input(T["sep_sum_lbl"], value=default_sum, key=f"b_sep_{box_num}")
-                        boxes_data[box_num] = {
-                            "mode": "separator",
-                            "sep_sum": custom_sum,
-                            "hold": "",
-                            "d_cells": ["", "", "", ""],
-                            "element_no": "",
-                            "images": []
-                        }
-                        running_series_sum = 0
+                    if el_info["type"] == "balance":
+                        team_balance_count += 1
+                    elif el_info["type"] == "dynamic":
+                        team_dynamic_count += 1
 
-                    elif mode == "team":
-                        sel_key = f"sel_team_{box_num}"
-                        if sel_key not in st.session_state or st.session_state[sel_key] not in team_codes:
-                            st.session_state[sel_key] = team_codes[0]
+                    # Трудность парного/группового элемента строго во 2-й клеточке
+                    boxes_data[box_num] = {
+                        "mode": "team",
+                        "hold": hold,
+                        "d_cells": ["", str(val), "", ""],
+                        "element_no": str(int(el_code)),
+                        "images": [el_info["image"]]
+                    }
 
-                        el_code = st.session_state[sel_key]
-                        el_info = db[el_code]
+                elif mode == "indiv":
+                    indiv_box_count += 1
+                    running_series_sum = 0
+                    same_for_all = st.checkbox(
+                        T["same_all_lbl"],
+                        value=(num_partners > 2),
+                        key=f"b_isame_{box_num}"
+                    )
 
-                        if os.path.exists(el_info["image"]):
-                            st.image(el_info["image"], use_container_width=True)
-                        st.caption(f"**No {el_code}** | **V {el_info['value']}**")
+                    chosen_codes = []
+                    chosen_vals = []
 
-                        if st.button(T["pick_el_btn"], key=f"btn_t_{box_num}", use_container_width=True):
-                            open_element_picker(sel_key, team_codes, is_indiv=False, box_num=box_num)
+                    if same_for_all:
+                        sel_key = f"sel_iall_{box_num}"
+                        if sel_key not in st.session_state or st.session_state[sel_key] not in indiv_codes:
+                            st.session_state[sel_key] = indiv_codes[0]
+                        c_code = st.session_state[sel_key]
+                        c_info = db[c_code]
 
-                        val = st.number_input(
-                            T["val_lbl"],
-                            min_value=0,
-                            max_value=30,
-                            value=int(el_info["value"]),
-                            key=f"b_tval_{box_num}_{el_code}"
-                        )
-                        hold = st.text_input(
-                            T["hold_lbl"],
-                            value=el_info["hold"],
-                            key=f"b_thold_{box_num}_{el_code}"
-                        )
+                        if os.path.exists(c_info["image"]):
+                            st.image(c_info["image"], use_container_width=True)
+                        st.caption(f"**No {c_code}** | **V {c_info['value']}**")
 
-                        running_series_sum += val
-                        total_team_points += val
+                        if st.button(T["pick_el_btn"], key=f"btn_ia_{box_num}", use_container_width=True):
+                            open_element_picker(sel_key, indiv_codes, is_indiv=True, box_num=box_num)
 
-                        if el_info["type"] == "balance":
-                            team_balance_count += 1
-                        elif el_info["type"] == "dynamic":
-                            team_dynamic_count += 1
-
-                        boxes_data[box_num] = {
-                            "mode": "team",
-                            "hold": hold,
-                            "d_cells": ["", str(val), "", ""],
-                            "element_no": str(int(el_code)),
-                            "images": [el_info["image"]]
-                        }
-
-                    elif mode == "indiv":
-                        indiv_box_count += 1
-                        running_series_sum = 0
-                        same_for_all = st.checkbox(
-                            T["same_all_lbl"],
-                            value=(num_partners > 2),
-                            key=f"b_isame_{box_num}"
-                        )
-
-                        chosen_codes = []
-                        chosen_vals = []
-
-                        if same_for_all:
-                            sel_key = f"sel_iall_{box_num}"
+                        chosen_codes = [c_code] * num_partners
+                        chosen_vals = [int(c_info["value"])] * num_partners
+                    else:
+                        for p_i, role in enumerate(partner_roles):
+                            sel_key = f"sel_ip_{box_num}_{p_i}"
                             if sel_key not in st.session_state or st.session_state[sel_key] not in indiv_codes:
                                 st.session_state[sel_key] = indiv_codes[0]
                             c_code = st.session_state[sel_key]
                             c_info = db[c_code]
 
-                            if os.path.exists(c_info["image"]):
-                                st.image(c_info["image"], use_container_width=True)
-                            st.caption(f"**No {c_code}** | **V {c_info['value']}**")
+                            st.caption(f"**{role}**: No {c_code} (V {c_info['value']})")
+                            if st.button(f"{role.split()[0]}: No {c_code}", key=f"btn_ip_{box_num}_{p_i}", use_container_width=True):
+                                open_element_picker(sel_key, indiv_codes, is_indiv=True, box_num=box_num, role_title=role)
 
-                            if st.button(T["pick_el_btn"], key=f"btn_ia_{box_num}", use_container_width=True):
-                                open_element_picker(sel_key, indiv_codes, is_indiv=True, box_num=box_num)
+                            chosen_codes.append(c_code)
+                            chosen_vals.append(int(c_info["value"]))
 
-                            chosen_codes = [c_code] * num_partners
-                            chosen_vals = [int(c_info["value"])] * num_partners
-                        else:
-                            for p_i, role in enumerate(partner_roles):
-                                sel_key = f"sel_ip_{box_num}_{p_i}"
-                                if sel_key not in st.session_state or st.session_state[sel_key] not in indiv_codes:
-                                    st.session_state[sel_key] = indiv_codes[0]
-                                c_code = st.session_state[sel_key]
-                                c_info = db[c_code]
+                    total_indiv_sum_all_partners += sum(chosen_vals)
 
-                                st.caption(f"**{role}**: No {c_code} (V {c_info['value']})")
-                                if st.button(f"{role.split()[0]}: No {c_code}", key=f"btn_ip_{box_num}_{p_i}", use_container_width=True):
-                                    open_element_picker(sel_key, indiv_codes, is_indiv=True, box_num=box_num, role_title=role)
+                    d_cells = ["", "", "", ""]
+                    for p_i in range(num_partners):
+                        d_cells[p_i] = str(chosen_vals[p_i])
 
-                                chosen_codes.append(c_code)
-                                chosen_vals.append(int(c_info["value"]))
+                    if len(set(chosen_codes)) == 1:
+                        imgs = [db[chosen_codes[0]]["image"]]
+                        el_no_str = chosen_codes[0]
+                    else:
+                        imgs = [db[c]["image"] for c in chosen_codes]
+                        el_no_str = " / ".join([str(int(c)) for c in chosen_codes])
 
-                        total_indiv_sum_all_partners += sum(chosen_vals)
+                    holds = [db[c]["hold"] for c in chosen_codes if db[c]["hold"]]
+                    hold_str = holds[0] if holds else ""
 
-                        d_cells = ["", "", "", ""]
-                        for p_i in range(num_partners):
-                            d_cells[p_i] = str(chosen_vals[p_i])
-
-                        if len(set(chosen_codes)) == 1:
-                            imgs = [db[chosen_codes[0]]["image"]]
-                            el_no_str = chosen_codes[0]
-                        else:
-                            imgs = [db[c]["image"] for c in chosen_codes]
-                            el_no_str = " / ".join([str(int(c)) for c in chosen_codes])
-
-                        holds = [db[c]["hold"] for c in chosen_codes if db[c]["hold"]]
-                        hold_str = holds[0] if holds else ""
-
-                        boxes_data[box_num] = {
-                            "mode": "individual",
-                            "hold": hold_str,
-                            "d_cells": d_cells,
-                            "element_no": el_no_str,
-                            "images": imgs
-                        }
+                    boxes_data[box_num] = {
+                        "mode": "individual",
+                        "hold": hold_str,
+                        "d_cells": d_cells,
+                        "element_no": el_no_str,
+                        "images": imgs
+                    }
 
 
 indiv_total_points = round(total_indiv_sum_all_partners / num_partners)
