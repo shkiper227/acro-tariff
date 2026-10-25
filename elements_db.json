@@ -1,0 +1,4159 @@
+{
+  "001": {
+    "id": "001",
+    "num": 1,
+    "value": 1,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/001.png"
+  },
+  "002": {
+    "id": "002",
+    "num": 2,
+    "value": 2,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/002.png"
+  },
+  "003": {
+    "id": "003",
+    "num": 3,
+    "value": 2,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/003.png"
+  },
+  "004": {
+    "id": "004",
+    "num": 4,
+    "value": 2,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/004.png"
+  },
+  "005": {
+    "id": "005",
+    "num": 5,
+    "value": 3,
+    "type": "individual",
+    "hold": "1\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/005.png"
+  },
+  "006": {
+    "id": "006",
+    "num": 6,
+    "value": 4,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/006.png"
+  },
+  "007": {
+    "id": "007",
+    "num": 7,
+    "value": 3,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/007.png"
+  },
+  "008": {
+    "id": "008",
+    "num": 8,
+    "value": 3,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/008.png"
+  },
+  "009": {
+    "id": "009",
+    "num": 9,
+    "value": 2,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/009.png"
+  },
+  "010": {
+    "id": "010",
+    "num": 10,
+    "value": 3,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/010.png"
+  },
+  "011": {
+    "id": "011",
+    "num": 11,
+    "value": 4,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/011.png"
+  },
+  "012": {
+    "id": "012",
+    "num": 12,
+    "value": 3,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/012.png"
+  },
+  "013": {
+    "id": "013",
+    "num": 13,
+    "value": 6,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/013.png"
+  },
+  "014": {
+    "id": "014",
+    "num": 14,
+    "value": 3,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/014.png"
+  },
+  "015": {
+    "id": "015",
+    "num": 15,
+    "value": 2,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/015.png"
+  },
+  "016": {
+    "id": "016",
+    "num": 16,
+    "value": 2,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/016.png"
+  },
+  "017": {
+    "id": "017",
+    "num": 17,
+    "value": 3,
+    "type": "individual",
+    "hold": "2\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/017.png"
+  },
+  "018": {
+    "id": "018",
+    "num": 18,
+    "value": 3,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/018.png"
+  },
+  "019": {
+    "id": "019",
+    "num": 19,
+    "value": 1,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/019.png"
+  },
+  "020": {
+    "id": "020",
+    "num": 20,
+    "value": 3,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/020.png"
+  },
+  "021": {
+    "id": "021",
+    "num": 21,
+    "value": 4,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/021.png"
+  },
+  "022": {
+    "id": "022",
+    "num": 22,
+    "value": 6,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/022.png"
+  },
+  "023": {
+    "id": "023",
+    "num": 23,
+    "value": 2,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/023.png"
+  },
+  "024": {
+    "id": "024",
+    "num": 24,
+    "value": 5,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/024.png"
+  },
+  "025": {
+    "id": "025",
+    "num": 25,
+    "value": 1,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/025.png"
+  },
+  "026": {
+    "id": "026",
+    "num": 26,
+    "value": 2,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/026.png"
+  },
+  "027": {
+    "id": "027",
+    "num": 27,
+    "value": 4,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/027.png"
+  },
+  "028": {
+    "id": "028",
+    "num": 28,
+    "value": 2,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/028.png"
+  },
+  "029": {
+    "id": "029",
+    "num": 29,
+    "value": 4,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/029.png"
+  },
+  "030": {
+    "id": "030",
+    "num": 30,
+    "value": 1,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/030.png"
+  },
+  "031": {
+    "id": "031",
+    "num": 31,
+    "value": 2,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/031.png"
+  },
+  "032": {
+    "id": "032",
+    "num": 32,
+    "value": 3,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/032.png"
+  },
+  "033": {
+    "id": "033",
+    "num": 33,
+    "value": 3,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/033.png"
+  },
+  "034": {
+    "id": "034",
+    "num": 34,
+    "value": 4,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/034.png"
+  },
+  "035": {
+    "id": "035",
+    "num": 35,
+    "value": 4,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/035.png"
+  },
+  "036": {
+    "id": "036",
+    "num": 36,
+    "value": 8,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/036.png"
+  },
+  "037": {
+    "id": "037",
+    "num": 37,
+    "value": 9,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/037.png"
+  },
+  "038": {
+    "id": "038",
+    "num": 38,
+    "value": 7,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/038.png"
+  },
+  "039": {
+    "id": "039",
+    "num": 39,
+    "value": 7,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/039.png"
+  },
+  "040": {
+    "id": "040",
+    "num": 40,
+    "value": 3,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/040.png"
+  },
+  "041": {
+    "id": "041",
+    "num": 41,
+    "value": 14,
+    "type": "individual",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix",
+      "3'lü Kadın",
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/041.png"
+  },
+  "042": {
+    "id": "042",
+    "num": 42,
+    "value": 1,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/042.png"
+  },
+  "043": {
+    "id": "043",
+    "num": 43,
+    "value": 2,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/043.png"
+  },
+  "044": {
+    "id": "044",
+    "num": 44,
+    "value": 3,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/044.png"
+  },
+  "045": {
+    "id": "045",
+    "num": 45,
+    "value": 4,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/045.png"
+  },
+  "046": {
+    "id": "046",
+    "num": 46,
+    "value": 1,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/046.png"
+  },
+  "047": {
+    "id": "047",
+    "num": 47,
+    "value": 1,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/047.png"
+  },
+  "048": {
+    "id": "048",
+    "num": 48,
+    "value": 1,
+    "type": "base_transition",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/048.png"
+  },
+  "049": {
+    "id": "049",
+    "num": 49,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/049.png"
+  },
+  "050": {
+    "id": "050",
+    "num": 50,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/050.png"
+  },
+  "051": {
+    "id": "051",
+    "num": 51,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/051.png"
+  },
+  "052": {
+    "id": "052",
+    "num": 52,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/052.png"
+  },
+  "053": {
+    "id": "053",
+    "num": 53,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/053.png"
+  },
+  "054": {
+    "id": "054",
+    "num": 54,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/054.png"
+  },
+  "055": {
+    "id": "055",
+    "num": 55,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/055.png"
+  },
+  "056": {
+    "id": "056",
+    "num": 56,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/056.png"
+  },
+  "057": {
+    "id": "057",
+    "num": 57,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/057.png"
+  },
+  "058": {
+    "id": "058",
+    "num": 58,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/058.png"
+  },
+  "059": {
+    "id": "059",
+    "num": 59,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/059.png"
+  },
+  "060": {
+    "id": "060",
+    "num": 60,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/060.png"
+  },
+  "061": {
+    "id": "061",
+    "num": 61,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/061.png"
+  },
+  "062": {
+    "id": "062",
+    "num": 62,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/062.png"
+  },
+  "063": {
+    "id": "063",
+    "num": 63,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/063.png"
+  },
+  "064": {
+    "id": "064",
+    "num": 64,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/064.png"
+  },
+  "065": {
+    "id": "065",
+    "num": 65,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Mix"
+    ],
+    "image": "elements_img/065.png"
+  },
+  "066": {
+    "id": "066",
+    "num": 66,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/066.png"
+  },
+  "067": {
+    "id": "067",
+    "num": 67,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/067.png"
+  },
+  "068": {
+    "id": "068",
+    "num": 68,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/068.png"
+  },
+  "069": {
+    "id": "069",
+    "num": 69,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/069.png"
+  },
+  "070": {
+    "id": "070",
+    "num": 70,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/070.png"
+  },
+  "071": {
+    "id": "071",
+    "num": 71,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/071.png"
+  },
+  "072": {
+    "id": "072",
+    "num": 72,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/072.png"
+  },
+  "073": {
+    "id": "073",
+    "num": 73,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/073.png"
+  },
+  "074": {
+    "id": "074",
+    "num": 74,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/074.png"
+  },
+  "075": {
+    "id": "075",
+    "num": 75,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/075.png"
+  },
+  "076": {
+    "id": "076",
+    "num": 76,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/076.png"
+  },
+  "077": {
+    "id": "077",
+    "num": 77,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/077.png"
+  },
+  "078": {
+    "id": "078",
+    "num": 78,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/078.png"
+  },
+  "079": {
+    "id": "079",
+    "num": 79,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/079.png"
+  },
+  "080": {
+    "id": "080",
+    "num": 80,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/080.png"
+  },
+  "081": {
+    "id": "081",
+    "num": 81,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/081.png"
+  },
+  "082": {
+    "id": "082",
+    "num": 82,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/082.png"
+  },
+  "083": {
+    "id": "083",
+    "num": 83,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/083.png"
+  },
+  "084": {
+    "id": "084",
+    "num": 84,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/084.png"
+  },
+  "085": {
+    "id": "085",
+    "num": 85,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/085.png"
+  },
+  "086": {
+    "id": "086",
+    "num": 86,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/086.png"
+  },
+  "087": {
+    "id": "087",
+    "num": 87,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/087.png"
+  },
+  "088": {
+    "id": "088",
+    "num": 88,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/088.png"
+  },
+  "089": {
+    "id": "089",
+    "num": 89,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/089.png"
+  },
+  "090": {
+    "id": "090",
+    "num": 90,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/090.png"
+  },
+  "091": {
+    "id": "091",
+    "num": 91,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/091.png"
+  },
+  "092": {
+    "id": "092",
+    "num": 92,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/092.png"
+  },
+  "093": {
+    "id": "093",
+    "num": 93,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/093.png"
+  },
+  "094": {
+    "id": "094",
+    "num": 94,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/094.png"
+  },
+  "095": {
+    "id": "095",
+    "num": 95,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/095.png"
+  },
+  "096": {
+    "id": "096",
+    "num": 96,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/096.png"
+  },
+  "097": {
+    "id": "097",
+    "num": 97,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/097.png"
+  },
+  "098": {
+    "id": "098",
+    "num": 98,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/098.png"
+  },
+  "099": {
+    "id": "099",
+    "num": 99,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/099.png"
+  },
+  "100": {
+    "id": "100",
+    "num": 100,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/100.png"
+  },
+  "101": {
+    "id": "101",
+    "num": 101,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/101.png"
+  },
+  "102": {
+    "id": "102",
+    "num": 102,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/102.png"
+  },
+  "103": {
+    "id": "103",
+    "num": 103,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/103.png"
+  },
+  "104": {
+    "id": "104",
+    "num": 104,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/104.png"
+  },
+  "105": {
+    "id": "105",
+    "num": 105,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/105.png"
+  },
+  "106": {
+    "id": "106",
+    "num": 106,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/106.png"
+  },
+  "107": {
+    "id": "107",
+    "num": 107,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/107.png"
+  },
+  "108": {
+    "id": "108",
+    "num": 108,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/108.png"
+  },
+  "109": {
+    "id": "109",
+    "num": 109,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/109.png"
+  },
+  "110": {
+    "id": "110",
+    "num": 110,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Mix"
+    ],
+    "image": "elements_img/110.png"
+  },
+  "111": {
+    "id": "111",
+    "num": 111,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/111.png"
+  },
+  "112": {
+    "id": "112",
+    "num": 112,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/112.png"
+  },
+  "113": {
+    "id": "113",
+    "num": 113,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/113.png"
+  },
+  "114": {
+    "id": "114",
+    "num": 114,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/114.png"
+  },
+  "115": {
+    "id": "115",
+    "num": 115,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Mix"
+    ],
+    "image": "elements_img/115.png"
+  },
+  "116": {
+    "id": "116",
+    "num": 116,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Mix"
+    ],
+    "image": "elements_img/116.png"
+  },
+  "117": {
+    "id": "117",
+    "num": 117,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Mix"
+    ],
+    "image": "elements_img/117.png"
+  },
+  "118": {
+    "id": "118",
+    "num": 118,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Mix"
+    ],
+    "image": "elements_img/118.png"
+  },
+  "119": {
+    "id": "119",
+    "num": 119,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/119.png"
+  },
+  "120": {
+    "id": "120",
+    "num": 120,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/120.png"
+  },
+  "121": {
+    "id": "121",
+    "num": 121,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/121.png"
+  },
+  "122": {
+    "id": "122",
+    "num": 122,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/122.png"
+  },
+  "123": {
+    "id": "123",
+    "num": 123,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/123.png"
+  },
+  "124": {
+    "id": "124",
+    "num": 124,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/124.png"
+  },
+  "125": {
+    "id": "125",
+    "num": 125,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/125.png"
+  },
+  "126": {
+    "id": "126",
+    "num": 126,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/126.png"
+  },
+  "127": {
+    "id": "127",
+    "num": 127,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/127.png"
+  },
+  "128": {
+    "id": "128",
+    "num": 128,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/128.png"
+  },
+  "129": {
+    "id": "129",
+    "num": 129,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/129.png"
+  },
+  "130": {
+    "id": "130",
+    "num": 130,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/130.png"
+  },
+  "131": {
+    "id": "131",
+    "num": 131,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/131.png"
+  },
+  "132": {
+    "id": "132",
+    "num": 132,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/132.png"
+  },
+  "133": {
+    "id": "133",
+    "num": 133,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/133.png"
+  },
+  "134": {
+    "id": "134",
+    "num": 134,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/134.png"
+  },
+  "135": {
+    "id": "135",
+    "num": 135,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/135.png"
+  },
+  "136": {
+    "id": "136",
+    "num": 136,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/136.png"
+  },
+  "137": {
+    "id": "137",
+    "num": 137,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/137.png"
+  },
+  "138": {
+    "id": "138",
+    "num": 138,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/138.png"
+  },
+  "139": {
+    "id": "139",
+    "num": 139,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/139.png"
+  },
+  "140": {
+    "id": "140",
+    "num": 140,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/140.png"
+  },
+  "141": {
+    "id": "141",
+    "num": 141,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/141.png"
+  },
+  "142": {
+    "id": "142",
+    "num": 142,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/142.png"
+  },
+  "143": {
+    "id": "143",
+    "num": 143,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/143.png"
+  },
+  "144": {
+    "id": "144",
+    "num": 144,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/144.png"
+  },
+  "145": {
+    "id": "145",
+    "num": 145,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/145.png"
+  },
+  "146": {
+    "id": "146",
+    "num": 146,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/146.png"
+  },
+  "147": {
+    "id": "147",
+    "num": 147,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/147.png"
+  },
+  "148": {
+    "id": "148",
+    "num": 148,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/148.png"
+  },
+  "149": {
+    "id": "149",
+    "num": 149,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/149.png"
+  },
+  "150": {
+    "id": "150",
+    "num": 150,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/150.png"
+  },
+  "151": {
+    "id": "151",
+    "num": 151,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/151.png"
+  },
+  "152": {
+    "id": "152",
+    "num": 152,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/152.png"
+  },
+  "153": {
+    "id": "153",
+    "num": 153,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/153.png"
+  },
+  "154": {
+    "id": "154",
+    "num": 154,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/154.png"
+  },
+  "155": {
+    "id": "155",
+    "num": 155,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/155.png"
+  },
+  "156": {
+    "id": "156",
+    "num": 156,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/156.png"
+  },
+  "157": {
+    "id": "157",
+    "num": 157,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/157.png"
+  },
+  "158": {
+    "id": "158",
+    "num": 158,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "Çift Erkek",
+      "Çift Kadın",
+      "Çift Mix"
+    ],
+    "image": "elements_img/158.png"
+  },
+  "159": {
+    "id": "159",
+    "num": 159,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/159.png"
+  },
+  "160": {
+    "id": "160",
+    "num": 160,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/160.png"
+  },
+  "161": {
+    "id": "161",
+    "num": 161,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/161.png"
+  },
+  "162": {
+    "id": "162",
+    "num": 162,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/162.png"
+  },
+  "163": {
+    "id": "163",
+    "num": 163,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/163.png"
+  },
+  "164": {
+    "id": "164",
+    "num": 164,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/164.png"
+  },
+  "165": {
+    "id": "165",
+    "num": 165,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/165.png"
+  },
+  "166": {
+    "id": "166",
+    "num": 166,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/166.png"
+  },
+  "167": {
+    "id": "167",
+    "num": 167,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/167.png"
+  },
+  "168": {
+    "id": "168",
+    "num": 168,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/168.png"
+  },
+  "169": {
+    "id": "169",
+    "num": 169,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/169.png"
+  },
+  "170": {
+    "id": "170",
+    "num": 170,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/170.png"
+  },
+  "171": {
+    "id": "171",
+    "num": 171,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/171.png"
+  },
+  "172": {
+    "id": "172",
+    "num": 172,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/172.png"
+  },
+  "173": {
+    "id": "173",
+    "num": 173,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/173.png"
+  },
+  "174": {
+    "id": "174",
+    "num": 174,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/174.png"
+  },
+  "175": {
+    "id": "175",
+    "num": 175,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/175.png"
+  },
+  "176": {
+    "id": "176",
+    "num": 176,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/176.png"
+  },
+  "177": {
+    "id": "177",
+    "num": 177,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/177.png"
+  },
+  "178": {
+    "id": "178",
+    "num": 178,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/178.png"
+  },
+  "179": {
+    "id": "179",
+    "num": 179,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/179.png"
+  },
+  "180": {
+    "id": "180",
+    "num": 180,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/180.png"
+  },
+  "181": {
+    "id": "181",
+    "num": 181,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/181.png"
+  },
+  "182": {
+    "id": "182",
+    "num": 182,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/182.png"
+  },
+  "183": {
+    "id": "183",
+    "num": 183,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/183.png"
+  },
+  "184": {
+    "id": "184",
+    "num": 184,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/184.png"
+  },
+  "185": {
+    "id": "185",
+    "num": 185,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/185.png"
+  },
+  "186": {
+    "id": "186",
+    "num": 186,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/186.png"
+  },
+  "187": {
+    "id": "187",
+    "num": 187,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/187.png"
+  },
+  "188": {
+    "id": "188",
+    "num": 188,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/188.png"
+  },
+  "189": {
+    "id": "189",
+    "num": 189,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/189.png"
+  },
+  "190": {
+    "id": "190",
+    "num": 190,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/190.png"
+  },
+  "191": {
+    "id": "191",
+    "num": 191,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/191.png"
+  },
+  "192": {
+    "id": "192",
+    "num": 192,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/192.png"
+  },
+  "193": {
+    "id": "193",
+    "num": 193,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/193.png"
+  },
+  "194": {
+    "id": "194",
+    "num": 194,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/194.png"
+  },
+  "195": {
+    "id": "195",
+    "num": 195,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/195.png"
+  },
+  "196": {
+    "id": "196",
+    "num": 196,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/196.png"
+  },
+  "197": {
+    "id": "197",
+    "num": 197,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/197.png"
+  },
+  "198": {
+    "id": "198",
+    "num": 198,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/198.png"
+  },
+  "199": {
+    "id": "199",
+    "num": 199,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/199.png"
+  },
+  "200": {
+    "id": "200",
+    "num": 200,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/200.png"
+  },
+  "201": {
+    "id": "201",
+    "num": 201,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/201.png"
+  },
+  "202": {
+    "id": "202",
+    "num": 202,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/202.png"
+  },
+  "203": {
+    "id": "203",
+    "num": 203,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/203.png"
+  },
+  "204": {
+    "id": "204",
+    "num": 204,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/204.png"
+  },
+  "205": {
+    "id": "205",
+    "num": 205,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/205.png"
+  },
+  "206": {
+    "id": "206",
+    "num": 206,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/206.png"
+  },
+  "207": {
+    "id": "207",
+    "num": 207,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/207.png"
+  },
+  "208": {
+    "id": "208",
+    "num": 208,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/208.png"
+  },
+  "209": {
+    "id": "209",
+    "num": 209,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/209.png"
+  },
+  "210": {
+    "id": "210",
+    "num": 210,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/210.png"
+  },
+  "211": {
+    "id": "211",
+    "num": 211,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/211.png"
+  },
+  "212": {
+    "id": "212",
+    "num": 212,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/212.png"
+  },
+  "213": {
+    "id": "213",
+    "num": 213,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/213.png"
+  },
+  "214": {
+    "id": "214",
+    "num": 214,
+    "value": 10,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/214.png"
+  },
+  "215": {
+    "id": "215",
+    "num": 215,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/215.png"
+  },
+  "216": {
+    "id": "216",
+    "num": 216,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/216.png"
+  },
+  "217": {
+    "id": "217",
+    "num": 217,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/217.png"
+  },
+  "218": {
+    "id": "218",
+    "num": 218,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/218.png"
+  },
+  "219": {
+    "id": "219",
+    "num": 219,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/219.png"
+  },
+  "220": {
+    "id": "220",
+    "num": 220,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/220.png"
+  },
+  "221": {
+    "id": "221",
+    "num": 221,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/221.png"
+  },
+  "222": {
+    "id": "222",
+    "num": 222,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/222.png"
+  },
+  "223": {
+    "id": "223",
+    "num": 223,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/223.png"
+  },
+  "224": {
+    "id": "224",
+    "num": 224,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/224.png"
+  },
+  "225": {
+    "id": "225",
+    "num": 225,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/225.png"
+  },
+  "226": {
+    "id": "226",
+    "num": 226,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/226.png"
+  },
+  "227": {
+    "id": "227",
+    "num": 227,
+    "value": 12,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/227.png"
+  },
+  "228": {
+    "id": "228",
+    "num": 228,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/228.png"
+  },
+  "229": {
+    "id": "229",
+    "num": 229,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/229.png"
+  },
+  "230": {
+    "id": "230",
+    "num": 230,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/230.png"
+  },
+  "231": {
+    "id": "231",
+    "num": 231,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/231.png"
+  },
+  "232": {
+    "id": "232",
+    "num": 232,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/232.png"
+  },
+  "233": {
+    "id": "233",
+    "num": 233,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/233.png"
+  },
+  "234": {
+    "id": "234",
+    "num": 234,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/234.png"
+  },
+  "235": {
+    "id": "235",
+    "num": 235,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/235.png"
+  },
+  "236": {
+    "id": "236",
+    "num": 236,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/236.png"
+  },
+  "237": {
+    "id": "237",
+    "num": 237,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/237.png"
+  },
+  "238": {
+    "id": "238",
+    "num": 238,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/238.png"
+  },
+  "239": {
+    "id": "239",
+    "num": 239,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/239.png"
+  },
+  "240": {
+    "id": "240",
+    "num": 240,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/240.png"
+  },
+  "241": {
+    "id": "241",
+    "num": 241,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/241.png"
+  },
+  "242": {
+    "id": "242",
+    "num": 242,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/242.png"
+  },
+  "243": {
+    "id": "243",
+    "num": 243,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/243.png"
+  },
+  "244": {
+    "id": "244",
+    "num": 244,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/244.png"
+  },
+  "245": {
+    "id": "245",
+    "num": 245,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/245.png"
+  },
+  "246": {
+    "id": "246",
+    "num": 246,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/246.png"
+  },
+  "247": {
+    "id": "247",
+    "num": 247,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/247.png"
+  },
+  "248": {
+    "id": "248",
+    "num": 248,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/248.png"
+  },
+  "249": {
+    "id": "249",
+    "num": 249,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/249.png"
+  },
+  "250": {
+    "id": "250",
+    "num": 250,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/250.png"
+  },
+  "251": {
+    "id": "251",
+    "num": 251,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/251.png"
+  },
+  "252": {
+    "id": "252",
+    "num": 252,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/252.png"
+  },
+  "253": {
+    "id": "253",
+    "num": 253,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/253.png"
+  },
+  "254": {
+    "id": "254",
+    "num": 254,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/254.png"
+  },
+  "255": {
+    "id": "255",
+    "num": 255,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/255.png"
+  },
+  "256": {
+    "id": "256",
+    "num": 256,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/256.png"
+  },
+  "257": {
+    "id": "257",
+    "num": 257,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/257.png"
+  },
+  "258": {
+    "id": "258",
+    "num": 258,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/258.png"
+  },
+  "259": {
+    "id": "259",
+    "num": 259,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/259.png"
+  },
+  "260": {
+    "id": "260",
+    "num": 260,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/260.png"
+  },
+  "261": {
+    "id": "261",
+    "num": 261,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/261.png"
+  },
+  "262": {
+    "id": "262",
+    "num": 262,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/262.png"
+  },
+  "263": {
+    "id": "263",
+    "num": 263,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/263.png"
+  },
+  "264": {
+    "id": "264",
+    "num": 264,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/264.png"
+  },
+  "265": {
+    "id": "265",
+    "num": 265,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/265.png"
+  },
+  "266": {
+    "id": "266",
+    "num": 266,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "3'lü Kadın"
+    ],
+    "image": "elements_img/266.png"
+  },
+  "267": {
+    "id": "267",
+    "num": 267,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/267.png"
+  },
+  "268": {
+    "id": "268",
+    "num": 268,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/268.png"
+  },
+  "269": {
+    "id": "269",
+    "num": 269,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/269.png"
+  },
+  "270": {
+    "id": "270",
+    "num": 270,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/270.png"
+  },
+  "271": {
+    "id": "271",
+    "num": 271,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/271.png"
+  },
+  "272": {
+    "id": "272",
+    "num": 272,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/272.png"
+  },
+  "273": {
+    "id": "273",
+    "num": 273,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/273.png"
+  },
+  "274": {
+    "id": "274",
+    "num": 274,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/274.png"
+  },
+  "275": {
+    "id": "275",
+    "num": 275,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/275.png"
+  },
+  "276": {
+    "id": "276",
+    "num": 276,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/276.png"
+  },
+  "277": {
+    "id": "277",
+    "num": 277,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/277.png"
+  },
+  "278": {
+    "id": "278",
+    "num": 278,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/278.png"
+  },
+  "279": {
+    "id": "279",
+    "num": 279,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/279.png"
+  },
+  "280": {
+    "id": "280",
+    "num": 280,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/280.png"
+  },
+  "281": {
+    "id": "281",
+    "num": 281,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/281.png"
+  },
+  "282": {
+    "id": "282",
+    "num": 282,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/282.png"
+  },
+  "283": {
+    "id": "283",
+    "num": 283,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/283.png"
+  },
+  "284": {
+    "id": "284",
+    "num": 284,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/284.png"
+  },
+  "285": {
+    "id": "285",
+    "num": 285,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/285.png"
+  },
+  "286": {
+    "id": "286",
+    "num": 286,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/286.png"
+  },
+  "287": {
+    "id": "287",
+    "num": 287,
+    "value": 8,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/287.png"
+  },
+  "288": {
+    "id": "288",
+    "num": 288,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/288.png"
+  },
+  "289": {
+    "id": "289",
+    "num": 289,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/289.png"
+  },
+  "290": {
+    "id": "290",
+    "num": 290,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/290.png"
+  },
+  "291": {
+    "id": "291",
+    "num": 291,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/291.png"
+  },
+  "292": {
+    "id": "292",
+    "num": 292,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/292.png"
+  },
+  "293": {
+    "id": "293",
+    "num": 293,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/293.png"
+  },
+  "294": {
+    "id": "294",
+    "num": 294,
+    "value": 3,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/294.png"
+  },
+  "295": {
+    "id": "295",
+    "num": 295,
+    "value": 5,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/295.png"
+  },
+  "296": {
+    "id": "296",
+    "num": 296,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/296.png"
+  },
+  "297": {
+    "id": "297",
+    "num": 297,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/297.png"
+  },
+  "298": {
+    "id": "298",
+    "num": 298,
+    "value": 6,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/298.png"
+  },
+  "299": {
+    "id": "299",
+    "num": 299,
+    "value": 10,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/299.png"
+  },
+  "300": {
+    "id": "300",
+    "num": 300,
+    "value": 9,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/300.png"
+  },
+  "301": {
+    "id": "301",
+    "num": 301,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/301.png"
+  },
+  "302": {
+    "id": "302",
+    "num": 302,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/302.png"
+  },
+  "303": {
+    "id": "303",
+    "num": 303,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/303.png"
+  },
+  "304": {
+    "id": "304",
+    "num": 304,
+    "value": 1,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/304.png"
+  },
+  "305": {
+    "id": "305",
+    "num": 305,
+    "value": 2,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/305.png"
+  },
+  "306": {
+    "id": "306",
+    "num": 306,
+    "value": 7,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/306.png"
+  },
+  "307": {
+    "id": "307",
+    "num": 307,
+    "value": 4,
+    "type": "balance",
+    "hold": "3\"",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/307.png"
+  },
+  "308": {
+    "id": "308",
+    "num": 308,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/308.png"
+  },
+  "309": {
+    "id": "309",
+    "num": 309,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/309.png"
+  },
+  "310": {
+    "id": "310",
+    "num": 310,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/310.png"
+  },
+  "311": {
+    "id": "311",
+    "num": 311,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/311.png"
+  },
+  "312": {
+    "id": "312",
+    "num": 312,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/312.png"
+  },
+  "313": {
+    "id": "313",
+    "num": 313,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/313.png"
+  },
+  "314": {
+    "id": "314",
+    "num": 314,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/314.png"
+  },
+  "315": {
+    "id": "315",
+    "num": 315,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/315.png"
+  },
+  "316": {
+    "id": "316",
+    "num": 316,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/316.png"
+  },
+  "317": {
+    "id": "317",
+    "num": 317,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/317.png"
+  },
+  "318": {
+    "id": "318",
+    "num": 318,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/318.png"
+  },
+  "319": {
+    "id": "319",
+    "num": 319,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/319.png"
+  },
+  "320": {
+    "id": "320",
+    "num": 320,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/320.png"
+  },
+  "321": {
+    "id": "321",
+    "num": 321,
+    "value": 8,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/321.png"
+  },
+  "322": {
+    "id": "322",
+    "num": 322,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/322.png"
+  },
+  "323": {
+    "id": "323",
+    "num": 323,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/323.png"
+  },
+  "324": {
+    "id": "324",
+    "num": 324,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/324.png"
+  },
+  "325": {
+    "id": "325",
+    "num": 325,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/325.png"
+  },
+  "326": {
+    "id": "326",
+    "num": 326,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/326.png"
+  },
+  "327": {
+    "id": "327",
+    "num": 327,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/327.png"
+  },
+  "328": {
+    "id": "328",
+    "num": 328,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/328.png"
+  },
+  "329": {
+    "id": "329",
+    "num": 329,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/329.png"
+  },
+  "330": {
+    "id": "330",
+    "num": 330,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/330.png"
+  },
+  "331": {
+    "id": "331",
+    "num": 331,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/331.png"
+  },
+  "332": {
+    "id": "332",
+    "num": 332,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/332.png"
+  },
+  "333": {
+    "id": "333",
+    "num": 333,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/333.png"
+  },
+  "334": {
+    "id": "334",
+    "num": 334,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/334.png"
+  },
+  "335": {
+    "id": "335",
+    "num": 335,
+    "value": 1,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/335.png"
+  },
+  "336": {
+    "id": "336",
+    "num": 336,
+    "value": 2,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/336.png"
+  },
+  "337": {
+    "id": "337",
+    "num": 337,
+    "value": 3,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/337.png"
+  },
+  "338": {
+    "id": "338",
+    "num": 338,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/338.png"
+  },
+  "339": {
+    "id": "339",
+    "num": 339,
+    "value": 4,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/339.png"
+  },
+  "340": {
+    "id": "340",
+    "num": 340,
+    "value": 8,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/340.png"
+  },
+  "341": {
+    "id": "341",
+    "num": 341,
+    "value": 5,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/341.png"
+  },
+  "342": {
+    "id": "342",
+    "num": 342,
+    "value": 6,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/342.png"
+  },
+  "343": {
+    "id": "343",
+    "num": 343,
+    "value": 7,
+    "type": "dynamic",
+    "hold": "",
+    "allowed_categories": [
+      "4'lü Erkek"
+    ],
+    "image": "elements_img/343.png"
+  }
+}
