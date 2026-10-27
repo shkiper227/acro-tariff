@@ -105,7 +105,8 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
     num_boxes = end_box - start_box + 1
     total_cols = 1 + num_boxes * 4
 
-    table = doc.add_table(rows=4, cols=total_cols)
+    # 6 строк: 0 - шапка бокса, 1 - картинка, 2 - D-Puanı, 3 - Element NO, 4 и 5 - две пустые строки по шаблону
+    table = doc.add_table(rows=6, cols=total_cols)
     table.alignment = WD_TABLE_ALIGNMENT.LEFT
     table.style = "Table Grid"
 
@@ -117,26 +118,30 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
         for c in range(1, total_cols):
             row.cells[c].width = sub_w
 
-    table.rows[0].height = Cm(0.45)
-    table.rows[1].height = Cm(3.35)
-    table.rows[2].height = Cm(0.50)
-    table.rows[3].height = Cm(0.50)
+    table.rows[0].height = Cm(0.42)
+    table.rows[1].height = Cm(2.85)
+    table.rows[2].height = Cm(0.42)
+    table.rows[3].height = Cm(0.42)
+    table.rows[4].height = Cm(0.42)
+    table.rows[5].height = Cm(0.42)
 
     top_left = table.cell(0, 0).merge(table.cell(1, 0))
     set_cell_text(top_left, "", size=7)
     set_cell_text(table.cell(2, 0), labels["d_puani"], size=7.5, bold=True)
     set_cell_text(table.cell(3, 0), labels["element_no"], size=7.5, bold=True)
+    set_cell_text(table.cell(4, 0), "", size=7.5)
+    set_cell_text(table.cell(5, 0), "", size=7.5)
 
     for b_idx in range(num_boxes):
         box_num = start_box + b_idx
         c0 = 1 + b_idx * 4
         b_info = boxes_data.get(box_num, {"mode": "empty"})
 
-        # Шапка бокса: слева в 1-й ячейке номер бокса, а в ячейках 2-4 (справа сбоку) по центру секунды
+        # Шапка бокса: слева в 1-й ячейке номер бокса, а в ячейках 2-4 секунды статики
         num_cell = table.cell(0, c0)
         hold_cell = table.cell(0, c0 + 1).merge(table.cell(0, c0 + 3))
-        set_cell_margins(num_cell, 10, 10, 15, 15)
-        set_cell_margins(hold_cell, 10, 10, 15, 15)
+        set_cell_margins(num_cell, 8, 8, 12, 12)
+        set_cell_margins(hold_cell, 8, 8, 12, 12)
 
         set_cell_text(num_cell, str(box_num), size=8, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER)
         hold_str = b_info.get("hold", "")
@@ -144,7 +149,7 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
 
         # Центр бокса (Картинка или разделитель //)
         img_cell = table.cell(1, c0).merge(table.cell(1, c0 + 3))
-        set_cell_margins(img_cell, 15, 15, 15, 15)
+        set_cell_margins(img_cell, 10, 10, 10, 10)
         img_cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
         mode = b_info.get("mode", "empty")
@@ -161,21 +166,36 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
                 p.paragraph_format.space_before = Pt(0)
                 p.paragraph_format.space_after = Pt(0)
                 run = p.add_run()
-                run.add_picture(buf, width=Cm(2.45), height=Cm(3.1))
+                run.add_picture(buf, width=Cm(2.35), height=Cm(2.65))
 
-        # Строка D-Puanı (4 клеточки; для парного/группового балл стоит во 2-й клеточке)
+        # Строка D-Puanı (4 клеточки)
         d_vals = b_info.get("d_cells", ["", "", "", ""])
         for sub_i in range(4):
             d_cell = table.cell(2, c0 + sub_i)
-            set_cell_margins(d_cell, 10, 10, 10, 10)
+            set_cell_margins(d_cell, 8, 8, 8, 8)
             val_str = d_vals[sub_i] if sub_i < len(d_vals) else ""
             set_cell_text(d_cell, val_str, size=8, bold=True)
 
-        # Строка Element NO
-        el_cell = table.cell(3, c0).merge(table.cell(3, c0 + 3))
-        set_cell_margins(el_cell, 10, 10, 15, 15)
-        el_no_str = b_info.get("element_no", "")
-        set_cell_text(el_cell, el_no_str, size=8, bold=False)
+        # Строка Element NO (4 клеточки или объединенная в зависимости от режима)
+        el_cells = b_info.get("el_cells", None)
+        if el_cells and any(el_cells):
+            for sub_i in range(4):
+                ec = table.cell(3, c0 + sub_i)
+                set_cell_margins(ec, 8, 8, 6, 6)
+                e_str = el_cells[sub_i] if sub_i < len(el_cells) else ""
+                set_cell_text(ec, e_str, size=7.5, bold=False)
+        else:
+            el_cell = table.cell(3, c0).merge(table.cell(3, c0 + 3))
+            set_cell_margins(el_cell, 8, 8, 10, 10)
+            el_no_str = b_info.get("element_no", "")
+            set_cell_text(el_cell, el_no_str, size=8, bold=False)
+
+        # 2 пустые строчки под Element NO (по 4 клеточки, как на стр. 38 правил)
+        for empty_row_idx in (4, 5):
+            for sub_i in range(4):
+                empty_c = table.cell(empty_row_idx, c0 + sub_i)
+                set_cell_margins(empty_c, 6, 6, 6, 6)
+                set_cell_text(empty_c, "", size=7)
 
     return table
 
@@ -188,14 +208,14 @@ def generate_tariff_docx(meta, boxes_data, total_d_puani, total_d_skoru):
     section = doc.sections[0]
     section.page_width = Cm(29.7)
     section.page_height = Cm(21.0)
-    section.top_margin = Cm(0.8)
-    section.bottom_margin = Cm(0.7)
+    section.top_margin = Cm(0.7)
+    section.bottom_margin = Cm(0.6)
     section.left_margin = Cm(0.9)
     section.right_margin = Cm(0.9)
 
     header_tbl = doc.add_table(rows=1, cols=2)
     header_tbl.style = "Table Grid"
-    header_tbl.rows[0].height = Cm(0.75)
+    header_tbl.rows[0].height = Cm(0.70)
     header_tbl.cell(0, 0).width = Cm(20.8)
     header_tbl.cell(0, 1).width = Cm(7.0)
 
@@ -230,21 +250,20 @@ def generate_tariff_docx(meta, boxes_data, total_d_puani, total_d_skoru):
     build_elements_row_table(left_container, 1, 7, boxes_data, labels)
 
     mid_p = left_container.add_paragraph()
-    mid_p.paragraph_format.space_before = Pt(3)
-    mid_p.paragraph_format.space_after = Pt(3)
+    mid_p.paragraph_format.space_before = Pt(2)
+    mid_p.paragraph_format.space_after = Pt(2)
 
     build_elements_row_table(left_container, 8, 14, boxes_data, labels)
 
     bot_p = left_container.add_paragraph()
-    bot_p.paragraph_format.space_before = Pt(4)
+    bot_p.paragraph_format.space_before = Pt(3)
     bot_p.paragraph_format.space_after = Pt(0)
 
-    footer_tbl = left_container.add_table(rows=1, cols=3)
+    # Нижняя таблица только с телефоном тренера (как на стр. 38 правил)
+    footer_tbl = left_container.add_table(rows=1, cols=1)
     footer_tbl.style = "Table Grid"
     footer_tbl.rows[0].height = Cm(0.65)
     footer_tbl.cell(0, 0).width = Cm(10.5)
-    footer_tbl.cell(0, 1).width = Cm(5.1)
-    footer_tbl.cell(0, 2).width = Cm(5.1)
 
     set_cell_text(
         footer_tbl.cell(0, 0),
@@ -253,8 +272,6 @@ def generate_tariff_docx(meta, boxes_data, total_d_puani, total_d_skoru):
         bold=True,
         align=WD_ALIGN_PARAGRAPH.LEFT
     )
-    set_cell_text(footer_tbl.cell(0, 1), "TF:", size=8.5, bold=True, align=WD_ALIGN_PARAGRAPH.LEFT)
-    set_cell_text(footer_tbl.cell(0, 2), "SR:", size=8.5, bold=True, align=WD_ALIGN_PARAGRAPH.LEFT)
 
     right_container.paragraphs[0].paragraph_format.space_after = Pt(0)
 
