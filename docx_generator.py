@@ -105,19 +105,17 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
     num_boxes = end_box - start_box + 1
     total_cols = 1 + num_boxes * 4
 
-    # 6 строк: 0 - шапка бокса, 1 - картинка, 2 - D-Puanı, 3 - Element NO, 4 и 5 - две пустые цельные строки
+    # 6 строк: 0 - шапка бокса, 1 - картинка, 2 - D-Puanı (4 квадратика),
+    # 3 - Element NO (объединенные 4), 4 и 5 - две пустые строки (объединенные по 4 квадратика как в Element NO)
     table = doc.add_table(rows=6, cols=total_cols)
     table.alignment = WD_TABLE_ALIGNMENT.LEFT
     table.style = "Table Grid"
 
     label_w = Cm(1.7)
     sub_w = Cm(0.68)
+    box_w = Cm(2.72)  # 4 * 0.68 см
 
-    for row in table.rows:
-        row.cells[0].width = label_w
-        for c in range(1, total_cols):
-            row.cells[c].width = sub_w
-
+    # Устанавливаем высоты строк
     table.rows[0].height = Cm(0.42)
     table.rows[1].height = Cm(2.85)
     table.rows[2].height = Cm(0.42)
@@ -125,7 +123,12 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
     table.rows[4].height = Cm(0.42)
     table.rows[5].height = Cm(0.42)
 
+    # Левый столбец заголовков строк
+    for r_idx in range(6):
+        table.cell(r_idx, 0).width = label_w
+
     top_left = table.cell(0, 0).merge(table.cell(1, 0))
+    top_left.width = label_w
     set_cell_text(top_left, "", size=7)
     set_cell_text(table.cell(2, 0), labels["d_puani"], size=7.5, bold=True)
     set_cell_text(table.cell(3, 0), labels["element_no"], size=7.5, bold=True)
@@ -137,18 +140,21 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
         c0 = 1 + b_idx * 4
         b_info = boxes_data.get(box_num, {"mode": "empty"})
 
-        # Шапка бокса: слева в 1-й ячейке номер бокса, а в ячейках 2-4 секунды статики
+        # Шапка бокса: 1-й квадратик под номер бокса, а квадратики 2-4 объединены под секунды статики
         num_cell = table.cell(0, c0)
+        num_cell.width = sub_w
         hold_cell = table.cell(0, c0 + 1).merge(table.cell(0, c0 + 3))
-        set_cell_margins(num_cell, 8, 8, 12, 12)
-        set_cell_margins(hold_cell, 8, 8, 12, 12)
+        hold_cell.width = Cm(2.04)
+        set_cell_margins(num_cell, 8, 8, 10, 10)
+        set_cell_margins(hold_cell, 8, 8, 10, 10)
 
         set_cell_text(num_cell, str(box_num), size=8, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER)
         hold_str = b_info.get("hold", "")
         set_cell_text(hold_cell, hold_str, size=8, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER)
 
-        # Центр бокса (Картинка или разделитель //)
+        # Центр бокса: объединяем 4 квадратика под картинку или разделитель //
         img_cell = table.cell(1, c0).merge(table.cell(1, c0 + 3))
+        img_cell.width = box_w
         set_cell_margins(img_cell, 10, 10, 10, 10)
         img_cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
 
@@ -168,25 +174,33 @@ def build_elements_row_table(doc, start_box, end_box, boxes_data, labels):
                 run = p.add_run()
                 run.add_picture(buf, width=Cm(2.35), height=Cm(2.65))
 
-        # Строка D-Puanı (4 клеточки)
+        # Строка D-Puanı (4 отдельных маленьких квадратика)
         d_vals = b_info.get("d_cells", ["", "", "", ""])
         for sub_i in range(4):
             d_cell = table.cell(2, c0 + sub_i)
-            set_cell_margins(d_cell, 8, 8, 8, 8)
+            d_cell.width = sub_w
+            set_cell_margins(d_cell, 8, 8, 6, 6)
             val_str = d_vals[sub_i] if sub_i < len(d_vals) else ""
             set_cell_text(d_cell, val_str, size=8, bold=True)
 
-        # Строка Element NO (цельная ячейка на всю ширину бокса)
+        # Строка Element NO: объединяем 4 квадратика в одну широкую ячейку
         el_cell = table.cell(3, c0).merge(table.cell(3, c0 + 3))
+        el_cell.width = box_w
         set_cell_margins(el_cell, 8, 8, 10, 10)
         el_no_str = b_info.get("element_no", "")
         set_cell_text(el_cell, el_no_str, size=8, bold=False)
 
-        # 2 пустые цельные строчки под Element NO (объединенные по 4 ячейки на ширину бокса)
-        for empty_row_idx in (4, 5):
-            empty_c = table.cell(empty_row_idx, c0).merge(table.cell(empty_row_idx, c0 + 3))
-            set_cell_margins(empty_c, 6, 6, 10, 10)
-            set_cell_text(empty_c, "", size=8)
+        # Строка 4 (1-я пустая строка под Element NO): объединяем 4 квадратика точно как в Element NO
+        empty_row1_cell = table.cell(4, c0).merge(table.cell(4, c0 + 3))
+        empty_row1_cell.width = box_w
+        set_cell_margins(empty_row1_cell, 8, 8, 10, 10)
+        set_cell_text(empty_row1_cell, "", size=8, bold=False)
+
+        # Строка 5 (2-я пустая строка под Element NO): объединяем 4 квадратика точно как в Element NO
+        empty_row2_cell = table.cell(5, c0).merge(table.cell(5, c0 + 3))
+        empty_row2_cell.width = box_w
+        set_cell_margins(empty_row2_cell, 8, 8, 10, 10)
+        set_cell_text(empty_row2_cell, "", size=8, bold=False)
 
     return table
 
