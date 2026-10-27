@@ -118,22 +118,23 @@ st.markdown("""
 
 UI = {
     "TR": {
+        "lang_label": "Dil",
         "app_title": "Akrobatik Cimnastik Tariff Sheet Sistemi",
-        "comp_label": "Yarışma Türü (Belge Dili)",
-        "comp_tr": "Ulusal Yarışma (Türkiye - Türkçe Belge)",
-        "comp_int": "Uluslararası Yarışma (FIG - İngilizce Belge)",
+        "comp_label": "Yarışma Türü",
+        "comp_tr": "Ulusal Yarışma",
+        "comp_int": "Uluslararası Yarışma",
         "team_header": "TAKIM VE SPORCU BİLGİLERİ",
         "age_group": "Yaş Grubu",
         "category": "Yarışma Kategorisi",
         "athletes_hdr": "Sporcuların Adı ve Soyadı",
-        "athletes_int_hint": "Uluslararası: İsimleri İngilizce karakterlerle (Latin) giriniz.",
-        "athletes_tr_hint": "Ulusal: Belge Türkçe formatında oluşturulacaktır.",
+        "athletes_int_hint": "Uluslararası: İsimleri Latin harfleriyle giriniz.",
+        "athletes_tr_hint": "Ulusal: Belge Türkçe oluşturulacaktır.",
         "club_tr": "Kulübün Adı",
-        "club_int": "Club / Federation Name",
+        "club_int": "Kulüp / Federasyon Adı",
         "phone_tr": "Antrenörün Telefon NO",
-        "phone_int": "Coach Phone NO",
+        "phone_int": "Antrenörün Telefon NO",
         "team_no_tr": "Takım NO",
-        "team_no_int": "Team NO",
+        "team_no_int": "Takım NO",
         "clear_all": "Tüm Kutuları Temizle",
         "boxes_hdr": "ELEMENT KUTULARI (1 — 14)",
         "boxes_sub": "Element seçmek için kutudaki butona tıklayın.",
@@ -148,6 +149,7 @@ UI = {
         "pick_el_btn": "Görsel Katalogdan Seç",
         "val_lbl": "Zorluk Değeri (V)",
         "hold_lbl": "Süre (Saniye)",
+        "el_no_lbl": "Element NO",
         "same_all_lbl": "Tüm partnerler aynı",
         "calc_hdr": "ZORLUK HESAPLAMASI",
         "team_pts": "Çift / Grup Toplamı",
@@ -157,6 +159,7 @@ UI = {
         "dl_btn": "TARIFF SHEET İNDİR (.DOCX)",
         "dl_note": "Word belgesi tek sayfa A4 yatay olarak hazırlandı.",
         "preview_hdr": "TARIFF SHEET ÖNİZLEME",
+        "dialog_hdr": "Element Kataloğu",
         "modal_title": "Görsel Element Kataloğu — Kutu",
         "search_no": "Element Numarası Ara (Örn: 053)",
         "filter_type": "Element Türü",
@@ -165,15 +168,15 @@ UI = {
         "filter_dyn": "Dinamik",
         "filter_trans": "Alt Kişi Geçişi (+V)",
         "select_btn": "Seç",
-        "roles_3": ["Üst (Top)", "Orta (Middle)", "Alt (Base)"],
-        "roles_4": ["Üst (Top)", "Orta 1 (Mid 1)", "Orta 2 (Mid 2)", "Alt (Base)"],
-        "roles_2": ["Üst (Top)", "Alt (Base)"],
+        "roles_3": ["Üst", "Orta", "Alt"],
+        "roles_4": ["Üst", "Orta 1", "Orta 2", "Alt"],
+        "roles_2": ["Üst", "Alt"],
         "cats_display": {
-            "Çift Erkek": "Çift Erkek (Men's Pair)",
-            "Çift Kadın": "Çift Kadın (Women's Pair)",
-            "Çift Mix": "Çift Mix (Mixed Pair)",
-            "3'lü Kadın": "3'lü Kadın (Women's Group)",
-            "4'lü Erkek": "4'lü Erkek (Men's Group)"
+            "Çift Erkek": "Çift Erkek",
+            "Çift Kadın": "Çift Kadın",
+            "Çift Mix": "Çift Mix",
+            "3'lü Kadın": "3'lü Kadın",
+            "4'lü Erkek": "4'lü Erkek"
         },
         "rule_count_ok": "Çift/Grup element sayısı tamamlandı",
         "rule_count_warn": "Çift/Grup element sayısı eksik/fazla. Gereken:",
@@ -183,22 +186,23 @@ UI = {
         "rule_ind_warn": "Bireysel element sayısı (Gereken: 3):"
     },
     "RU": {
+        "lang_label": "Язык",
         "app_title": "Системный конструктор Tariff Sheet",
-        "comp_label": "Тип соревнований (Язык бланка)",
-        "comp_tr": "Турецкие соревнования (TCF - Бланк на турецком)",
-        "comp_int": "Международные соревнования (FIG - Бланк на английском)",
+        "comp_label": "Тип соревнований",
+        "comp_tr": "Национальные соревнования",
+        "comp_int": "Международные соревнования",
         "team_header": "ДАННЫЕ КОМАНДЫ И СПОРТСМЕНОВ",
         "age_group": "Возрастная группа",
         "category": "Категория",
         "athletes_hdr": "Имя и Фамилия спортсменов",
         "athletes_int_hint": "Международный: вводите имена латиницей.",
-        "athletes_tr_hint": "Турецкий: бланк будет на турецком языке.",
-        "club_tr": "Название клуба (Kulübün Adı)",
-        "club_int": "Клуб / Федерация (на английском)",
+        "athletes_tr_hint": "Национальный: бланк будет сформирован на турецком языке.",
+        "club_tr": "Название клуба",
+        "club_int": "Клуб / Федерация",
         "phone_tr": "Телефон тренера",
-        "phone_int": "Coach Phone NO",
+        "phone_int": "Телефон тренера",
         "team_no_tr": "Номер команды",
-        "team_no_int": "Team NO",
+        "team_no_int": "Номер команды",
         "clear_all": "Очистить все боксы",
         "boxes_hdr": "ЗАПОЛНЕНИЕ БОКСОВ (1 — 14)",
         "boxes_sub": "Нажмите кнопку в боксе для открытия визуального каталога.",
@@ -213,6 +217,7 @@ UI = {
         "pick_el_btn": "Выбрать элемент (Каталог)",
         "val_lbl": "Трудность (V)",
         "hold_lbl": "Секунды статики",
+        "el_no_lbl": "Номер элемента",
         "same_all_lbl": "Одинаковый у всех",
         "calc_hdr": "РАСЧЕТ СЛОЖНОСТИ",
         "team_pts": "Парные / Групповые",
@@ -222,6 +227,7 @@ UI = {
         "dl_btn": "СКАЧАТЬ TARIFF SHEET (.DOCX)",
         "dl_note": "Документ полностью редактируемый в Word на 1 листе А4.",
         "preview_hdr": "ПРЕВЬЮ БЛАНКА TARIFF SHEET",
+        "dialog_hdr": "Каталог элементов",
         "modal_title": "Визуальный каталог элементов — Бокс",
         "search_no": "Поиск по номеру (например: 053)",
         "filter_type": "Тип элемента",
@@ -230,15 +236,15 @@ UI = {
         "filter_dyn": "Динамика",
         "filter_trans": "Переход (+V)",
         "select_btn": "Выбрать",
-        "roles_3": ["Верхняя (Top)", "Средняя (Middle)", "Нижняя (Base)"],
-        "roles_4": ["Верхний (Top)", "Средний 1 (Mid 1)", "Средний 2 (Mid 2)", "Нижний (Base)"],
-        "roles_2": ["Верхний (Top)", "Нижний (Base)"],
+        "roles_3": ["Верхняя", "Средняя", "Нижняя"],
+        "roles_4": ["Верхний", "Средний 1", "Средний 2", "Нижний"],
+        "roles_2": ["Верхний", "Нижний"],
         "cats_display": {
-            "Çift Erkek": "Мужская пара (Çift Erkek)",
-            "Çift Kadın": "Женская пара (Çift Kadın)",
-            "Çift Mix": "Смешанная пара (Çift Mix)",
-            "3'lü Kadın": "Женская тройка (3'lü Kadın)",
-            "4'lü Erkek": "Мужская четверка (4'lü Erkek)"
+            "Çift Erkek": "Мужская пара",
+            "Çift Kadın": "Женская пара",
+            "Çift Mix": "Смешанная пара",
+            "3'lü Kadın": "Женская тройка",
+            "4'lü Erkek": "Мужская четверка"
         },
         "rule_count_ok": "Количество парных/групповых элементов в норме",
         "rule_count_warn": "Количество парных/групповых не совпадает. Требуется:",
@@ -246,18 +252,165 @@ UI = {
         "rule_bd_warn": "Минимум 2 баланса и 2 динамики обязательны",
         "rule_ind_ok": "Все 3 бокса индивидуальных заполнены (3/3)",
         "rule_ind_warn": "Заполнено индивидуальных боксов (Требуется 3):"
+    },
+    "EN": {
+        "lang_label": "Language",
+        "app_title": "Acrobatic Gymnastics Tariff Sheet System",
+        "comp_label": "Competition Type",
+        "comp_tr": "National Competition",
+        "comp_int": "International Competition",
+        "team_header": "TEAM AND GYMNAST INFORMATION",
+        "age_group": "Age Group",
+        "category": "Competition Category",
+        "athletes_hdr": "Gymnasts' First and Last Names",
+        "athletes_int_hint": "International: Enter names in Latin characters.",
+        "athletes_tr_hint": "National: Document will be generated in Turkish format.",
+        "club_tr": "Club Name",
+        "club_int": "Club / Federation Name",
+        "phone_tr": "Coach Phone NO",
+        "phone_int": "Coach Phone NO",
+        "team_no_tr": "Team NO",
+        "team_no_int": "Team NO",
+        "clear_all": "Clear All Boxes",
+        "boxes_hdr": "ELEMENT BOXES (1 — 14)",
+        "boxes_sub": "Click the button inside a box to open the visual catalog.",
+        "row1": "Row 1 (Boxes 1 – 7)",
+        "row2": "Row 2 (Boxes 8 – 14)",
+        "box_lbl": "Box",
+        "mode_empty": "Empty",
+        "mode_team": "Pair / Group",
+        "mode_indiv": "Individual",
+        "mode_sep": "Separator //",
+        "sep_sum_lbl": "Series Subtotal (// X)",
+        "pick_el_btn": "Select from Catalog",
+        "val_lbl": "Difficulty Value (V)",
+        "hold_lbl": "Hold Time (Seconds)",
+        "el_no_lbl": "Element NO",
+        "same_all_lbl": "Same for all partners",
+        "calc_hdr": "DIFFICULTY CALCULATION",
+        "team_pts": "Pair / Group Total",
+        "indiv_pts": "Individual Points",
+        "rules_hdr": "RULES AND VALIDATION (TCF 2026)",
+        "dl_hdr": "DOWNLOAD DOCUMENT",
+        "dl_btn": "DOWNLOAD TARIFF SHEET (.DOCX)",
+        "dl_note": "Word document is formatted on a single landscape A4 page.",
+        "preview_hdr": "TARIFF SHEET PREVIEW",
+        "dialog_hdr": "Element Catalog",
+        "modal_title": "Visual Element Catalog — Box",
+        "search_no": "Search by Element Number (e.g. 053)",
+        "filter_type": "Element Type",
+        "filter_all": "All",
+        "filter_bal": "Balance (3\")",
+        "filter_dyn": "Dynamic",
+        "filter_trans": "Base Transition (+V)",
+        "select_btn": "Select",
+        "roles_3": ["Top", "Middle", "Base"],
+        "roles_4": ["Top", "Middle 1", "Middle 2", "Base"],
+        "roles_2": ["Top", "Base"],
+        "cats_display": {
+            "Çift Erkek": "Men's Pair",
+            "Çift Kadın": "Women's Pair",
+            "Çift Mix": "Mixed Pair",
+            "3'lü Kadın": "Women's Group",
+            "4'lü Erkek": "Men's Group"
+        },
+        "rule_count_ok": "Pair/Group element count is complete",
+        "rule_count_warn": "Pair/Group element count mismatch. Required:",
+        "rule_bd_ok": "Balance and Dynamic distribution is valid",
+        "rule_bd_warn": "At least 2 Balance and 2 Dynamic elements required",
+        "rule_ind_ok": "Individual elements completed (3/3)",
+        "rule_ind_warn": "Individual element boxes filled (Required: 3):"
+    },
+    "FR": {
+        "lang_label": "Langue",
+        "app_title": "Système de Feuille de Tarif de Gymnastique Acrobatique",
+        "comp_label": "Type de Compétition",
+        "comp_tr": "Compétition Nationale",
+        "comp_int": "Compétition Internationale",
+        "team_header": "INFORMATIONS SUR L'ÉQUIPE ET LES GYMNASTES",
+        "age_group": "Catégorie d'Âge",
+        "category": "Catégorie de Compétition",
+        "athletes_hdr": "Nom et Prénom des Gymnastes",
+        "athletes_int_hint": "International : Saisissez les noms en caractères latins.",
+        "athletes_tr_hint": "National : Le document sera généré au format turc.",
+        "club_tr": "Nom du Club",
+        "club_int": "Nom du Club / Fédération",
+        "phone_tr": "Téléphone de l'Entraîneur",
+        "phone_int": "Téléphone de l'Entraîneur",
+        "team_no_tr": "N° d'Équipe",
+        "team_no_int": "N° d'Équipe",
+        "clear_all": "Effacer Toutes les Cases",
+        "boxes_hdr": "CASES D'ÉLÉMENTS (1 — 14)",
+        "boxes_sub": "Cliquez sur le bouton dans une case pour ouvrir le catalogue visuel.",
+        "row1": "Rangée 1 (Cases 1 – 7)",
+        "row2": "Rangée 2 (Cases 8 – 14)",
+        "box_lbl": "Case",
+        "mode_empty": "Vide",
+        "mode_team": "Duo / Groupe",
+        "mode_indiv": "Individuel",
+        "mode_sep": "Séparateur //",
+        "sep_sum_lbl": "Sous-total de la Série (// X)",
+        "pick_el_btn": "Choisir dans le Catalogue",
+        "val_lbl": "Valeur de Difficulté (V)",
+        "hold_lbl": "Temps de Maintien (Secondes)",
+        "el_no_lbl": "N° d'Élément",
+        "same_all_lbl": "Identique pour tous les partenaires",
+        "calc_hdr": "CALCUL DE LA DIFFICULTÉ",
+        "team_pts": "Total Duo / Groupe",
+        "indiv_pts": "Points Individuels",
+        "rules_hdr": "RÈGLES ET CONTRÔLE (TCF 2026)",
+        "dl_hdr": "TÉLÉCHARGER LE DOCUMENT",
+        "dl_btn": "TÉLÉCHARGER LA FEUILLE DE TARIF (.DOCX)",
+        "dl_note": "Le document Word est préparé sur une seule page A4 paysage.",
+        "preview_hdr": "APERÇU DE LA FEUILLE DE TARIF",
+        "dialog_hdr": "Catalogue d'Éléments",
+        "modal_title": "Catalogue Visuel d'Éléments — Case",
+        "search_no": "Rechercher par N° d'Élément (ex: 053)",
+        "filter_type": "Type d'Élément",
+        "filter_all": "Tous",
+        "filter_bal": "Statique (3\")",
+        "filter_dyn": "Dynamique",
+        "filter_trans": "Transition du Porteur (+V)",
+        "select_btn": "Choisir",
+        "roles_3": ["Voltigeur", "Milieu", "Porteur"],
+        "roles_4": ["Voltigeur", "Milieu 1", "Milieu 2", "Porteur"],
+        "roles_2": ["Voltigeur", "Porteur"],
+        "cats_display": {
+            "Çift Erkek": "Duo Masculin",
+            "Çift Kadın": "Duo Féminin",
+            "Çift Mix": "Duo Mixte",
+            "3'lü Kadın": "Trio Féminin",
+            "4'lü Erkek": "Quatuor Masculin"
+        },
+        "rule_count_ok": "Nombre d'éléments Duo/Groupe complet",
+        "rule_count_warn": "Nombre d'éléments Duo/Groupe incorrect. Requis :",
+        "rule_bd_ok": "Répartition Statique et Dynamique conforme",
+        "rule_bd_warn": "Au moins 2 Statiques et 2 Dynamiques requis",
+        "rule_ind_ok": "Éléments individuels complets (3/3)",
+        "rule_ind_warn": "Cases d'éléments individuels remplies (Requis : 3) :"
     }
 }
+
+LANG_NAMES = {
+    "TR": "Türkçe",
+    "RU": "Русский",
+    "EN": "English",
+    "FR": "Français"
+}
+
+if "ui_lang" not in st.session_state:
+    st.session_state["ui_lang"] = "TR"
 
 # Верхняя шапка: Заголовок, выбор типа соревнований и языка
 top_c1, top_c2, top_c3 = st.columns([2.0, 1.4, 0.6])
 
 with top_c3:
+    current_lang = st.session_state["ui_lang"]
     ui_lang = st.selectbox(
-        "Dil / Язык",
-        options=["TR", "RU"],
-        format_func=lambda x: "Türkçe" if x == "TR" else "Русский",
-        index=0
+        UI[current_lang]["lang_label"],
+        options=["TR", "RU", "EN", "FR"],
+        format_func=lambda x: LANG_NAMES[x],
+        key="ui_lang"
     )
 
 T = UI[ui_lang]
@@ -277,7 +430,7 @@ if not db:
     st.stop()
 
 
-@st.dialog("Каталог элементов", width="large")
+@st.dialog(T["dialog_hdr"], width="large")
 def open_element_picker(state_key, allowed_codes, is_indiv=False, box_num=1, role_title=""):
     st.markdown(f"#### {T['modal_title']} {box_num} {f'({role_title})' if role_title else ''}")
     f_col1, f_col2 = st.columns([1.2, 1.5])
@@ -478,6 +631,11 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
                         value=el_info["hold"],
                         key=f"b_thold_{box_num}_{el_code}"
                     )
+                    custom_el_no = st.text_input(
+                        T["el_no_lbl"],
+                        value=str(int(el_code)),
+                        key=f"b_telno_{box_num}_{el_code}"
+                    )
 
                     running_series_sum += val
                     total_team_points += val
@@ -492,7 +650,7 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
                         "mode": "team",
                         "hold": hold,
                         "d_cells": ["", str(val), "", ""],
-                        "element_no": str(int(el_code)),
+                        "element_no": custom_el_no,
                         "images": [el_info["image"]]
                     }
 
@@ -507,6 +665,7 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
 
                     chosen_codes = []
                     chosen_vals = []
+                    chosen_el_nos = []
 
                     if same_for_all:
                         sel_key = f"sel_iall_{box_num}"
@@ -522,8 +681,22 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
                         if st.button(T["pick_el_btn"], key=f"btn_ia_{box_num}", use_container_width=True):
                             open_element_picker(sel_key, indiv_codes, is_indiv=True, box_num=box_num)
 
+                        val_ind = st.number_input(
+                            T["val_lbl"],
+                            min_value=0,
+                            max_value=30,
+                            value=int(c_info["value"]),
+                            key=f"b_ival_all_{box_num}_{c_code}"
+                        )
+                        custom_el_no = st.text_input(
+                            T["el_no_lbl"],
+                            value=str(int(c_code)),
+                            key=f"b_ielno_all_{box_num}_{c_code}"
+                        )
+
                         chosen_codes = [c_code] * num_partners
-                        chosen_vals = [int(c_info["value"])] * num_partners
+                        chosen_vals = [val_ind] * num_partners
+                        chosen_el_nos = [custom_el_no] * num_partners
                     else:
                         for p_i, role in enumerate(partner_roles):
                             sel_key = f"sel_ip_{box_num}_{p_i}"
@@ -533,11 +706,25 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
                             c_info = db[c_code]
 
                             st.caption(f"**{role}**: No {c_code} (V {c_info['value']})")
-                            if st.button(f"{role.split()[0]}: No {c_code}", key=f"btn_ip_{box_num}_{p_i}", use_container_width=True):
+                            if st.button(f"{role}: No {c_code}", key=f"btn_ip_{box_num}_{p_i}", use_container_width=True):
                                 open_element_picker(sel_key, indiv_codes, is_indiv=True, box_num=box_num, role_title=role)
 
+                            val_p = st.number_input(
+                                f"{T['val_lbl']} ({role})",
+                                min_value=0,
+                                max_value=30,
+                                value=int(c_info["value"]),
+                                key=f"b_ival_p_{box_num}_{p_i}_{c_code}"
+                            )
+                            el_no_p = st.text_input(
+                                f"{T['el_no_lbl']} ({role})",
+                                value=str(int(c_code)),
+                                key=f"b_ielno_p_{box_num}_{p_i}_{c_code}"
+                            )
+
                             chosen_codes.append(c_code)
-                            chosen_vals.append(int(c_info["value"]))
+                            chosen_vals.append(val_p)
+                            chosen_el_nos.append(el_no_p)
 
                     total_indiv_sum_all_partners += sum(chosen_vals)
 
@@ -547,13 +734,21 @@ for row_idx, (start_b, end_b) in enumerate([(1, 7), (8, 14)]):
 
                     if len(set(chosen_codes)) == 1:
                         imgs = [db[chosen_codes[0]]["image"]]
-                        el_no_str = chosen_codes[0]
                     else:
                         imgs = [db[c]["image"] for c in chosen_codes]
-                        el_no_str = " / ".join([str(int(c)) for c in chosen_codes])
+
+                    if len(set(chosen_el_nos)) == 1:
+                        el_no_str = chosen_el_nos[0]
+                    else:
+                        el_no_str = " / ".join(chosen_el_nos)
 
                     holds = [db[c]["hold"] for c in chosen_codes if db[c]["hold"]]
-                    hold_str = holds[0] if holds else ""
+                    default_hold_str = holds[0] if holds else ""
+                    hold_str = st.text_input(
+                        T["hold_lbl"],
+                        value=default_hold_str,
+                        key=f"b_ihold_{box_num}_{'_'.join(chosen_codes)}"
+                    )
 
                     boxes_data[box_num] = {
                         "mode": "individual",
